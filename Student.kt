@@ -1,6 +1,4 @@
 package héritage.university
-
-
 data class Student(
     var nomEt:String, var ageEt:Int, var numeroMat:Int
 ) {
@@ -18,11 +16,13 @@ data class Student(
     fun Learn(){
         //Incrémente la probabilité de succés a de  2%
         probabilité+=2
-
     }
     fun party(){
         //décrémente la probabilité de succés a de  2%
         probabilité-=2
+    }
+    fun toostring(){
+        println("la probabilité se succés de $nomEt est: $probabilité")
     }
 }
 
